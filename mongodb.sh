@@ -6,10 +6,10 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-if [ $ID ne 0 ]
+if [ $ID -ne 0 ]
 then 
     echo -e "ERROR:: $R Please run this script with root user $N "
     exit 1 
 else
-    echo " You are root user"
+    echo " $G You are root user $N "
 fi
